@@ -2,37 +2,33 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root .select-button {
+  background-color: #ef5241;
+  border-color: #cf4938;
+  color: #ffffff;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#popover-basic{
+  padding: 10px;
+  font-family: 'Lobster', cursive;
+  font-size: .75em;
+  max-width: 50vw;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#popover-basic:after{
+  content: "";
+  background: url(http://awesome-coding.com/theme/images/form-message-pattern.png) repeat-x;
+  background-size: initial;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
-
-.App-link {
-  color: #61dafb;
+#popover-basic .popover-header{
+  color: #ef5241;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#popover-basic .popover-body{
+  background-color: #fff;
+  border-bottom-left-radius: .3rem;
+  border-bottom-right-radius: .3rem;
 }
